@@ -53,7 +53,7 @@ void led_identify_task(void *_args) {
 
 void led_identify(homekit_value_t _value) {
     printf("LED identify\n");
-    xTaskCreate(led_identify_task, "LED identify", 128, NULL, 2, NULL);
+    xTaskCreate(led_identify_task, "LED identify", 128, NULL, 5, NULL);
 }
 
 homekit_value_t led_on_get() {
